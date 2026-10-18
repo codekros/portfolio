@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Krishna Gawande — Data Engineer & SDE specializing in PySpark, AWS (S3, Glue, EMR, Athena), Python, SQL, and Big Data Analytics.">
+  <meta name="keywords" content="Krishna Gawande, Data Engineer, Big Data, PySpark, AWS Glue, Amazon EMR, Athena, SQL, Python, Django, PostgreSQL, Portfolio">
+  <meta name="author" content="Krishna Gawande">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Krishna Gawande | Data Engineer & SDE">
+  <meta property="og:description" content="Portfolio of Krishna Gawande — Big Data Pipelines, Cloud Lakehouses (AWS / PySpark), and Financial Analytics Platforms.">
+  <meta property="og:url" content="https://codekros.github.io/">
+
+  <title>Krishna Gawande — Data Engineer & SDE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       Site Header & Navigation
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo" aria-label="Krishna Gawande Portfolio">
+        <span class="logo-badge">KG</span>
+        <span>Krishna Gawande</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#expertise">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience & Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <svg class="theme-icon-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg class="theme-icon-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn-nav-resume">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         Hero Section
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              Data Engineer &bull; SDE &bull; Big Data Analytics
+            </div>
+
+            <h1 class="hero-title">
+              Engineering scalable data pipelines & <span class="highlight">cloud lakehouses.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              I am a <strong>Data Engineer & Software Development Engineer</strong> focused on building scalable data pipelines, distributed data systems, and robust backend applications that transform complex, high-volume data into reliable and actionable insights.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                Explore Projects
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Contact Me
+              </a>
+              <a href="https://github.com/codekros" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub Profile @codekros" title="GitHub: codekros">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75a1.75 1.75 0 0 1 1.75 1.75c0 .97-.78 1.76-1.75 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Hero Bento Metrics -->
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <span class="stat-value">14 Yrs</span>
+            <span class="stat-label">Weather Data History</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">4,685</span>
+            <span class="stat-label">Cities Analyzed (PySpark)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">75%</span>
+            <span class="stat-label">Memory Optimized (Parquet)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">81.07%</span>
+            <span class="stat-label">CDAC PGCP-BDA Score</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         About Section
+         ========================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Big Data Analytics, ETL & Backend Architecture</h2>
+          <p class="section-description">
+            Passionate about building reliable, high-performance data pipelines and web backend architectures. Experienced in database schema design, business logic implementation, performance optimization, and integrating frontend, backend, and database components.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Skills & Tech Stack Bento Grid
+         ========================================================================= -->
+    <section class="section" id="expertise" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical Skills & Ecosystem</h2>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Big Data Card -->
+          <div class="bento-card bento-col-8">
+            <div class="bento-card-header">
+              <div class="bento-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              </div>
+              <span class="bento-badge">Big Data</span>
+            </div>
+            <h3 class="bento-title">Big Data & Distributed Computing</h3>
+            <p class="bento-text">
+              Building large-scale ETL pipelines, distributed data transformations, and analytical data processing workflows.
+            </p>
+            <div class="skill-tag-group">
+              <span class="skill-tag">Apache Spark (PySpark)</span>
+              <span class="skill-tag">Kafka</span>
+              <span class="skill-tag">Hadoop</span>
+              <span class="skill-tag">Hive</span>
+            </div>
+          </div>
+
+          <!-- Cloud (AWS) Card -->
+          <div class="bento-card bento-col-4">
+            <div class="bento-card-header">
+              <div class="bento-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+              </div>
+              <span class="bento-badge">AWS Cloud</span>
+            </div>
+            <h3 class="bento-title">Cloud Infrastructure</h3>
+            <p class="bento-text">
+              Cloud storage, serverless query engines, and compute orchestration.
+            </p>
+            <div class="skill-tag-group">
+              <span class="skill-tag">Amazon S3</span>
+              <span class="skill-tag">AWS Glue</span>
+              <span class="skill-tag">Amazon EMR</span>
+              <span class="skill-tag">Amazon Athena</span>
+              <span class="skill-tag">EC2</span>
+              <span class="skill-tag">Lambda</span>
+              <span class="skill-tag">CloudWatch</span>
+            </div>
+          </div>
+
+          <!-- Programming Languages & DBs -->
+          <div class="bento-card bento-col-6">
+            <div class="bento-card-header">
+              <div class="bento-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              </div>
+              <span class="bento-badge">Languages & DBs</span>
+            </div>
+            <h3 class="bento-title">Programming & Databases</h3>
+            <p class="bento-text">
+              Backend development, database schema design, and query optimization.
+            </p>
+            <div class="skill-tag-group">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Django</span>
+            </div>
+          </div>
+
+          <!-- AI/ML, BI & Tools -->
+          <div class="bento-card bento-col-6">
+            <div class="bento-card-header">
+              <div class="bento-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <span class="bento-badge">AI, BI & Tools</span>
+            </div>
+            <h3 class="bento-title">AI/ML, BI & Developer Tools</h3>
+            <p class="bento-text">
+              Machine learning modeling, business intelligence dashboards, CI/CD, and agentic development.
+            </p>
+            <div class="skill-tag-group">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">PowerBI</span>
+              <span class="skill-tag">Git / GitHub Actions</span>
+              <span class="skill-tag">Agentic AI (Cursor, Claude, Antigravity)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Featured Projects Section (With Modals & Links)
+         ========================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured Academic & Technical Projects</h2>
+          <p class="section-description">
+            Click any project card to view full technical architecture and implementation details.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-wrapper">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="bigdata">Big Data & Cloud</button>
+          <button class="filter-btn" data-filter="analytics">Financial Analytics & ML</button>
+          <button class="filter-btn" data-filter="bi">BI & Visualization</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: AGRO Platform -->
+          <article class="project-card" data-category="bigdata" data-project-id="project-agro">
+            <div class="project-header">
+              <span class="project-category">Big Data & Cloud ETL</span>
+              <span class="project-metric-pill">14 Yrs Weather Data</span>
+            </div>
+            <h3 class="project-title">
+              AGRO: Intelligent Agricultural Analytics Platform
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </h3>
+            <p class="project-description">
+              End-to-end Big Data Agricultural Analytics Platform analyzing 14 years of hourly weather data across 4,685 cities. Built with PySpark, AWS Glue, EMR, Athena, and GitHub Actions.
+            </p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="skill-tag">PySpark</span>
+                <span class="skill-tag">AWS Glue</span>
+                <span class="skill-tag">EMR</span>
+                <span class="skill-tag">Athena</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PGCPBDA-FinalProject/Group-4-AGRO-Feb-2026" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View GitHub Repo" aria-label="GitHub Repo">⌥</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SEC XBRL -->
+          <article class="project-card" data-category="analytics" data-project-id="project-sec">
+            <div class="project-header">
+              <span class="project-category">Financial Analytics & ML</span>
+              <span class="project-metric-pill">-75% Memory Optimization</span>
+            </div>
+            <h3 class="project-title">
+              SEC Corporate Financial Intelligence & Distress Engine
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </h3>
+            <p class="project-description">
+              Automated ingestion and processing of SEC EDGAR XBRL filings into 18 KPIs. Reduced memory by 75% using Parquet downcasting, with a Random Forest model and Altman Z-Score for distress prediction.
+            </p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Parquet</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">Scikit-learn</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/codekros/SEC-XBRL-fillings-analysis-dashboard.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View GitHub Repo" aria-label="GitHub Repo">⌥</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Sales Dashboard -->
+          <article class="project-card" data-category="bi" data-project-id="project-sales">
+            <div class="project-header">
+              <span class="project-category">Business Intelligence</span>
+              <span class="project-metric-pill">Interactive KPI Dashboard</span>
+            </div>
+            <h3 class="project-title">
+              Sales Performance Management System Dashboard
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </h3>
+            <p class="project-description">
+              Interactive Tableau Public & Excel dashboard analyzing transactional sales data across countries, states, cities, and retail segments to support data-driven decision-making.
+            </p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="skill-tag">Tableau Public</span>
+                <span class="skill-tag">MS Excel</span>
+                <span class="skill-tag">KPI Analytics</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/codekros/sales-insights.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View GitHub Repo" aria-label="GitHub Repo">⌥</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Experience & Academic Background Timeline
+         ========================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career & Education</span>
+          <h2 class="section-title">Work Experience & Academic Details</h2>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Work Experience -->
+          <div>
+            <h3 class="timeline-column-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Work Experience
+            </h3>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-date">24/04/2025 – 10/02/2026</div>
+                <div class="timeline-role">Software Development Engineer (SDE)</div>
+                <div class="timeline-company">QuantEdgeLabs</div>
+                <div class="timeline-desc">
+                  <ul>
+                    <li>SDE with experience in designing and supporting trading algorithms for financial market analysis and automated decision-making systems in Python.</li>
+                    <li>Developed scalable web applications using Django and PostgreSQL while improving data processing flows.</li>
+                    <li>Worked on database schema design, business logic implementation, data processing workflows, backend performance optimization, debugging, testing, and Git-based version control while integrating frontend, backend, and database components.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div id="education">
+            <h3 class="timeline-column-title">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              Academic Details
+            </h3>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-date">2026 | Score: 81.07%</div>
+                <div class="timeline-role">PGCP-BDA (Big Data Analytics)</div>
+                <div class="timeline-company">C-DAC ACTS / SM VITA, Mumbai, Maharashtra</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2024 | Score: 68.59%</div>
+                <div class="timeline-role">BE Information Technology</div>
+                <div class="timeline-company">Sipna College of Engineering & Tech, Amravati (SGBAU)</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2020 | Score: 66.46%</div>
+                <div class="timeline-role">XII Computer Science</div>
+                <div class="timeline-company">Shri Samartha Junior College, Akola (MSBSHSE)</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2018 | Score: 74.60%</div>
+                <div class="timeline-role">X General</div>
+                <div class="timeline-company">Sahakar Vidya Mandir, Buldana (CBSE)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Certifications & Extracurriculars
+         ========================================================================= -->
+    <section class="section" id="certifications" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials & Activities</span>
+          <h2 class="section-title">Certifications & Extra Curricular</h2>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card bento-col-8">
+            <h3 class="bento-title" style="margin-bottom: 16px;">Technical Certifications</h3>
+            <ul style="display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: var(--text-secondary);">
+              <li style="display: flex; align-items: center; gap: 10px;">
+                <span class="bento-badge" style="color: var(--text-primary); background: var(--bg-tertiary);">2026</span>
+                <strong>Snowflake Badge 1: Data Warehousing Essentials</strong> — Snowflake University
+              </li>
+              <li style="display: flex; align-items: center; gap: 10px;">
+                <span class="bento-badge" style="color: var(--text-primary); background: var(--bg-tertiary);">CERT</span>
+                <strong>Board Infinity: Data Science for Beginners</strong> (CERT-20260730-2258048)
+              </li>
+              <li style="display: flex; align-items: center; gap: 10px;">
+                <span class="bento-badge" style="color: var(--text-primary); background: var(--bg-tertiary);">AI</span>
+                <strong>AI-Powered Software Development</strong> (Agentic AI and its Ecosystem)
+              </li>
+              <li style="display: flex; align-items: center; gap: 10px;">
+                <span class="bento-badge" style="color: var(--text-primary); background: var(--bg-tertiary);">GenAI</span>
+                <strong>FutureSkills Prime: Gen AI 101</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bento-card bento-col-4">
+            <h3 class="bento-title" style="margin-bottom: 16px;">Sports & Interests</h3>
+            <div class="skill-tag-group" style="margin-bottom: 16px;">
+              <span class="skill-tag">🏑 Hockey u19 Division (VC)</span>
+              <span class="skill-tag">🏑 Hockey u16 State (C)</span>
+              <span class="skill-tag">🏏 Cricket u16 Division (VC)</span>
+              <span class="skill-tag">🏔️ Trekking</span>
+              <span class="skill-tag">⚽ Sports</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Contact Section (Direct Email Copy + Form)
+         ========================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-description">
+            Feel free to reach out directly for full-time opportunities or technical discussions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details -->
+          <div class="contact-info">
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Direct Contact</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 18px;">
+                Open to full-time Data Engineering roles, distributed systems projects, and remote opportunities.
+              </p>
+
+              <div class="email-copy-box">
+                <div class="email-copy-label">Email Address</div>
+                <div class="email-copy-action">
+                  <span class="email-text" id="userEmailText">krishnagawande2231@gmail.com</span>
+                  <button class="btn-copy" id="btnCopyEmail" type="button">Copy</button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 style="font-size: 0.85rem; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em;">Profiles</h4>
+              <div class="social-links">
+                <a href="https://github.com/codekros" target="_blank" rel="noopener noreferrer" class="social-btn">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub @codekros
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75a1.75 1.75 0 0 1 1.75 1.75c0 .97-.78 1.76-1.75 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="formName">Your Name</label>
+                <input type="text" id="formName" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formEmail">Your Email</label>
+                <input type="email" id="formEmail" class="form-control" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formSubject">Subject</label>
+                <input type="text" id="formSubject" class="form-control" placeholder="Data Engineering Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formMessage">Message</label>
+                <textarea id="formMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <div class="footer-copy">
+        &copy; 2026 Krishna Gawande.
+      </div>
+      <div class="footer-live-badge">
+        <span class="status-dot"></span>
+        Hosted on GitHub Pages
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Case Study Deep-Dive Modal (<dialog>)
+       ========================================================================= -->
+  <dialog id="caseStudyModal" class="case-study-modal" closedby="any">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <div>
+          <span id="modalCategory" class="project-category" style="display: block; margin-bottom: 4px;">CATEGORY</span>
+          <h2 id="modalTitle" style="font-size: 1.35rem; font-weight: 800; color: var(--text-primary);">Project Title</h2>
+        </div>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h4 class="modal-section-title">Overview & Challenge</h4>
+        <p id="modalProblem" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;"></p>
+
+        <h4 class="modal-section-title">Architecture & Methodology</h4>
+        <p id="modalArchitecture" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;"></p>
+
+        <h4 class="modal-section-title">Key Contributions & Results</h4>
+        <ul id="modalMetrics" style="list-style-type: disc; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;"></ul>
+
+        <h4 class="modal-section-title">Technologies Used</h4>
+        <div id="modalTech" class="skill-tag-group" style="margin-top: 10px; margin-bottom: 22px;"></div>
+
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 16px;">
+          <a id="modalRepoLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex;">
+            View Source Code on GitHub ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification -->
+  <div id="toastNotice" class="toast-notice" role="status" aria-live="polite">✓ Notification</div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
